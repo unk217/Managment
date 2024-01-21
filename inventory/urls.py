@@ -5,6 +5,7 @@ from inventory import views
 
 router = routers.DefaultRouter()
 router.register(r'inventory', views.InventoryView, 'inventory')
+router.register(r'Users', views.UsersView, 'users')
 
 urlpatterns = [
 path("api/v1/", include(router.urls)),   
